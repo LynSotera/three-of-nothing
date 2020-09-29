@@ -1,0 +1,253 @@
+/*Font Style : Public Sans*/
+/*CSS Rule : font-family: 'Public Sans', sans-serif;*/
+/*Available font weight
+Extra-light 200 | Extra-light 200 italic | Light 300 | Light 300 italic | Regular 400 | Regular 400 italic | Medium 500 | Medium 500 italic | Semi-bold 600 | Semi-bold 600 italic | Bold 700 | Bold 700 italic | Extra-bold 800 | Extra-bold 800 italic | Black 900 | Black 900 italic
+*/
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #b2ebf2;
+}
+
+.canvas{
+	margin-top: 2vw;
+	margin-bottom: 5vw;
+
+	display: grid;
+	grid-template-columns: 33% 34% 33%;
+}
+
+.signin{
+	width: 50%;
+	height: 450px;
+	background-color: white;
+	margin-left: auto;
+	border-radius: 2vw;
+
+	display: flex;
+	flex-direction: column;
+
+	box-shadow: 15px 15px 50px grey;
+}
+
+.signin img{
+	width: 10vw;
+	height: auto;
+	display: block;
+	margin-top: 2vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.signin span{
+	text-align: center;
+	font-family: 'Public Sans', sans-serif;
+	font-size: 0.9vw;
+	color: #34c9dc;
+}
+
+.signin .si{
+	font-weight: bold;
+}
+
+.signin .auth{
+	margin-top: 3vw;
+}
+
+.signin .auth input{
+	display: block;
+
+	margin: auto;
+	margin-bottom: 1.5vw;
+
+	width: 75%;
+
+	border: none;
+	border-radius: 999px;
+	background-color: #ededed;
+	color: white;
+
+	text-align: center;
+
+	padding : 0.5vw 0 0.5vw 0;
+}
+
+::placeholder {
+	color: white;
+}
+
+.signin .auth input[type=submit]{
+	display: block;
+
+	margin: auto;
+	margin-bottom: 1.5vw;
+
+	width: 75%;
+
+	border: none;
+	border-radius: 999px;
+	background-color: #00bcd4;
+	color: white;
+
+	text-align: center;
+
+	padding : 0.5vw 0 0.5vw 0;
+
+	transition: background-color 0.2s;
+}
+
+.signin .auth input[type=submit]:hover{
+	background-color: #0093a6;
+}
+
+.signin span a{
+	text-decoration: none;
+	font-weight: bold;
+	color: #34c9dc;
+}
+
+.signin .su{
+	margin-top: 1.5vw;
+}
+
+.splash{
+	width: 50%;
+	height: 450px;
+	margin: auto;
+	border-radius: 2vw;
+
+	background-color: #31b6ce;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+
+	box-shadow: 15px 15px 50px grey;
+
+	margin-top: 5vw;
+}
+
+.splash span{
+	margin-top: 11rem;
+	margin-bottom: 5rem;
+
+	font-family: 'Public Sans', sans-serif;
+	font-size: 2vw;
+	text-align: center;
+	letter-spacing: 0.2rem;
+
+	color: white;
+	font-weight: bold;
+}
+
+.splash img{
+	width: 16vw;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.signup{
+	width: 50%;
+	height: 450px;
+	background-color: white;
+	margin-right: auto;
+	border-radius: 2vw;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	box-shadow: 15px 15px 50px grey;
+
+	margin-top: 10vw;
+}
+
+.signup img{
+	width: 10vw;
+	height: auto;
+	display: block;
+	margin-top: 2vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.signup span{
+	text-align: center;
+	font-family: 'Public Sans', sans-serif;
+	font-size: 0.9vw;
+	color: #34c9dc;
+	font-weight: bold;
+}
+
+.signup .auth{
+	margin-top: 4vw;
+}
+
+.signup .auth input{
+	display: block;
+
+	margin: auto;
+	margin-bottom: 1.5vw;
+
+	width: 100%;
+
+	border: none;
+	border-radius: 999px;
+	background-color: #ededed;
+	color: white;
+
+	text-align: center;
+
+	padding : 0.5vw 0 0.5vw 0;
+}
+
+.signup .auth input[type=submit]{
+	display: block;
+
+	margin: auto;
+	margin-bottom: 1.5vw;
+
+	border: none;
+	border-radius: 999px;
+	background-color: #00bcd4;
+	color: white;
+
+	text-align: center;
+
+	padding : 0.5vw 0 0.5vw 0;
+
+	transition: background-color 0.2s;
+}
+
+.signup .auth input[type=submit]:hover{
+	background-color: #0093a6;
+}
+
+.footer{
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+
+	background-color: #f4f4f4;
+
+	font-family: 'Public Sans', sans-serif;
+	font-size: 1.5vw;
+	text-align: center;
+}
+
+.footer a{
+	color: #34b843;
+	text-decoration: none;
+	transition: ease-in-out 0.2s;
+}
+
+.footer a:hover{
+	color: #258f31;
+}

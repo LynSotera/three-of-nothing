@@ -1,0 +1,485 @@
+/*Google Font | Ubuntu*/
+/*CSS Rules : font-family: 'Ubuntu', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/*Google Font | Quicksand*/
+/*CSS Rules : font-family: 'Quicksand', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.canvas{
+	display: grid;
+	grid-template-columns: 80% 20%;
+}
+
+.container{
+	background-color: white;
+}
+
+.navbar{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	padding-left: 1rem;
+	padding-top: 2rem;
+}
+
+.title span{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1.5vw;
+	margin-left: 2rem;
+}
+
+.title img{
+	width: 1.5rem;
+}
+
+.search img{
+	width: 1rem;
+	position: relative;
+	left: 1.8rem;
+	top: 0.25rem;
+}
+
+.search input{
+	width: 75%;
+	padding-left: 2rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	background-color: #fcfcfc;
+	border: none;
+
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.promo{
+	background-color: #fff7ee;
+	border-radius: 1rem;
+	margin: 1rem;
+	margin-right: 2rem;
+	padding: 3rem;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.promo img{
+	width: 13rem;
+}
+
+.promotext{
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+	font-size: 1.5vw;
+	color: tomato;
+	letter-spacing: 0.1rem;
+}
+
+.promotext p{
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.dot{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.subdot{
+	width: 0.8rem;
+	height: 0.8rem;
+	background-color: #f0f0f0;
+	border-radius: 999px;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+#selected{
+	background-color: tomato;
+}
+
+.subdot:hover{
+	background-color: tomato;
+}
+
+.ktitle{
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.ktitle p{
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+	font-size: 2vw;
+}
+
+.ktitle div{
+	background-color: #fb6d37;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1vw;
+	color: white;
+
+	width: auto;
+
+	border-radius: 999px;
+
+	transition: all ease-in-out 0.2s;
+}
+
+.ktitle div:hover{
+	cursor: pointer;
+	background-color: #ff5b19;
+}
+
+.kcontent{
+	margin-left: 2rem;
+	margin-right: 2rem;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.kmakan{
+	width: 25%;
+	height: 9rem;
+	overflow: hidden;
+	border-radius: 1rem;
+
+	position: relative;
+
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+
+.kcontent .kmakan img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	filter: brightness(0.6);
+	transform: scale(1.1);
+	transition: all ease-out 0.2s;
+}
+
+.kcontent .kmakan img:hover{
+	filter: brightness(0.8);
+  	transform: scale(1);
+}
+
+.kcontent .kmakan span{
+	width: 15rem;
+	text-align: center;
+
+	font-weight: bold;
+	font-family: "Quicksand", sans-serif;
+	font-size: 2vw;
+	color: white;
+
+	position: absolute;
+	left: 1%;
+	top: 40%;
+}
+
+.populer{
+	margin-top: 3rem;
+	margin-bottom: 1rem;
+}
+
+.populer .ptitle p{
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+	font-size: 2vw;
+
+	margin-left: 2rem;
+}
+
+.pcontent{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+}
+
+.pisi{
+	width: 33%;
+	height: 13rem;
+
+	position: relative;
+
+	margin-top: 1rem;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+
+.pimage{
+	width: auto;
+	height: 60%;
+	overflow: hidden;
+	border-radius: 1rem;
+
+	position: relative;
+}
+
+.pimage img{
+	width: 100%;
+	height: 100%;
+
+	object-fit: cover;
+	object-position: 50% 50%;
+
+	filter: brightness(0.8);
+	transform: scale(1.1);
+	transition: all ease-in-out 0.4s;
+}
+
+.pimage img:hover{
+	transform: scale(1);
+	filter: brightness(1);
+}
+
+.ptime{
+	position: absolute;
+	top: 37.5%;
+	left: 2.5%;
+
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	background-color: white;
+
+	border-radius: 1rem;
+}
+
+.ptime span{
+	font-size: 1.2vw;
+	font-weight: bold;
+	font-family: "Ubuntu", sans-serif;
+	color: black;
+	letter-spacing: 0.2rem;
+}
+
+.pname{
+	margin-top: 1rem;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: bold;
+	color: black;
+	font-size: 1.5vw;
+	letter-spacing: 0.1rem;
+}
+
+.rating{
+	margin-top: 0.25rem;
+
+}
+
+.rating span{
+	font-family: "Ubuntu", sans-serif;
+	color: black;
+	font-size: 1.3vw;
+	letter-spacing: 0.1rem;
+	margin-right: 1rem;
+}
+
+
+.rating img{
+	width: 1rem;
+	height: auto;
+	display: inline;
+}
+
+.side{
+	width: 100%;
+	background-color: #fcfcfc;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.sidenav{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: flex-start;
+
+	margin-top: 1rem;
+}
+
+#hearth{
+	width: 2rem;
+	margin-right: 2rem;
+
+	cursor: pointer;
+}
+
+.notification{
+	font-family: 'Ubuntu', sans-serif;
+	width: 2rem;
+	height: 2rem;
+	background-color: #fcd661;
+	border-radius: 999px;
+
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+
+  	cursor: pointer;
+}
+
+#gigachad{
+	width: 2rem;
+	border-radius: 999px;
+	margin-left: 2rem;
+
+	cursor: pointer;
+}
+
+.pesanan{
+
+}
+
+.ptext{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 2vw;
+	margin-top: 3rem;
+	margin-bottom: 1rem;
+}
+
+.cpesanan{
+	background-color: #6454c3;
+	padding: 1rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+
+	border-radius: 1rem;
+}
+
+.cpesanan span{
+	display: block;
+	font-family: 'Quicsand', sans-serif;
+	color: white;
+	margin-bottom: 2rem;
+}
+
+.cpesanan #user{
+	font-size: 1.5vw;
+}
+
+.cpesanan #amount{
+	font-size: 1.8vw;
+}
+
+.cpesanan #idcard{
+	font-size: 1vw;
+	letter-spacing: 0.2rem;
+	margin-bottom: 0;
+}
+
+.lpesanan{
+	margin-top: 2rem;
+}
+
+.lpesanan table tbody tr td{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1.1vw;
+	font-weight: bold;
+}
+
+.lpesanan table tbody tr td img{
+	width: 5rem;
+	height: 5rem;
+	object-fit: cover;
+	border-radius: 1rem;
+
+	margin-bottom: 0.5rem;
+}
+
+.side-price{
+	text-align: end;
+	color: #bdbdbd;
+}
+
+.anter{
+	width: 5rem;
+	height: 5rem;
+	background-color: #fff7ee;
+
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+.anter img{
+	width: 2rem !important;
+	height: 2rem !important;
+}
+
+.tpesanan .t{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.5vw;
+}
+
+.tpesanan .price{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 2.2vw;
+	font-weight: bold;
+}
+
+.pesans{
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+
+	width: 100%;
+	height: auto;
+	padding: 1rem;
+	border-radius: 1.5rem;
+	background-color: #fcd661;
+
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-around;
+  	align-items: center;
+
+  	transition: 0.3s;
+}
+
+.pesans span{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.5vw;
+	font-weight: bold;
+	color: #45443f;
+}
+
+.pesans img{
+	width: 1rem;
+}
+
+.pesans:hover{
+	background-color: #ffca26;
+	cursor: pointer;
+}

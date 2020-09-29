@@ -1,0 +1,377 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Online Course App</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="canvas">
+        	<div class="sidebar">
+        		<div class="sideicon1">
+        			<div class="sidicon-member">
+	        			<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M15.8529 140.358C6.03506 146.096 0 156.613 0 167.985V479.998C0 497.671 14.3269 511.998 32 511.998H143.929C161.602 511.998 175.929 497.671 175.929 479.998V344.018C175.929 326.344 190.256 312.018 207.929 312.018H304.07C321.743 312.018 336.07 326.344 336.07 344.018V479.998C336.07 497.671 350.397 511.998 368.07 511.998H480C497.673 511.998 512 497.671 512 479.998V167.985C512 156.613 505.965 146.096 496.147 140.358L272.147 9.43922C262.172 3.60908 249.828 3.60908 239.853 9.43923L15.8529 140.358Z"/>
+						</svg>
+					</div>
+					<div class="sidicon-member active">
+	        			<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 104C0 86.3269 14.3269 72 32 72H239.074V440H32C14.3269 440 0 425.673 0 408V104Z"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M480 72H272.926V440H480C497.673 440 512 425.673 512 408V104C512 86.3269 497.673 72 480 72ZM314.777 136C310.359 136 306.777 139.582 306.777 144V176C306.777 180.418 310.359 184 314.777 184H470.149C474.567 184 478.149 180.418 478.149 176V144C478.149 139.582 474.567 136 470.149 136H314.777ZM306.777 240C306.777 235.582 310.359 232 314.777 232H470.149C474.567 232 478.149 235.582 478.149 240V272C478.149 276.418 474.567 280 470.149 280H314.777C310.359 280 306.777 276.418 306.777 272V240ZM314.777 328C310.359 328 306.777 331.582 306.777 336V368C306.777 372.418 310.359 376 314.777 376H470.149C474.567 376 478.149 372.418 478.149 368V336C478.149 331.582 474.567 328 470.149 328H314.777Z"/>
+						</svg>
+					</div>
+					<div class="sidicon-member">
+	        			<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M436 0C411.186 0 391 20.186 391 45C391 55.065 394.439 64.272 400.044 71.776L326.652 151.412C323.22 150.571 319.688 150 316 150C306.788 150 298.23 152.802 291.09 157.57L238.755 118.33C240.083 114.091 241 109.671 241 105C241 80.186 220.814 60 196 60C171.186 60 151 80.186 151 105C151 109.671 151.917 114.091 153.245 118.33L100.91 157.57C93.77 152.802 85.212 150 76 150C51.186 150 31 170.186 31 195C31 219.814 51.186 240 76 240C100.814 240 121 219.814 121 195C121 190.329 120.083 185.909 118.755 181.67L171.09 142.43C178.229 147.198 186.788 150 196 150C205.212 150 213.77 147.198 220.91 142.43L273.245 181.67C271.917 185.909 271 190.329 271 195C271 219.814 291.186 240 316 240C340.814 240 361 219.814 361 195C361 184.935 357.561 175.728 351.956 168.224L425.348 88.588C428.78 89.429 432.312 90 436 90C460.814 90 481 69.814 481 45C481 20.186 460.814 0 436 0Z"/>
+							<path d="M226 253.235H166C157.709 253.235 151 261.424 151 271.544V512H241V271.544C241 261.424 234.291 253.235 226 253.235Z"/>
+							<path d="M346 326.471H286C277.709 326.471 271 334.66 271 344.779V512H361V344.779C361 334.66 354.291 326.471 346 326.471Z"/>
+							<path d="M466 180H406C397.709 180 391 188.189 391 198.309V512H481V198.309C481 188.189 474.291 180 466 180Z"/>
+							<path d="M106 363.088H46C37.709 363.088 31 371.277 31 381.397V512H121V381.397C121 371.277 114.291 363.088 106 363.088Z"/>
+						</svg>
+					</div>
+					<div class="sidicon-member">
+	        			<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M255.6 512C278.275 512 297.63 497.062 304.31 476.541C307.045 468.138 299.637 460.8 290.8 460.8H220.4C211.563 460.8 204.155 468.138 206.89 476.541C213.57 497.062 232.925 512 255.6 512ZM426.686 363.086C423.686 360.086 422 356.016 422 351.773V217.6C422 142.633 374.027 81.372 306.134 59.714C299.093 57.468 294 51.113 294 43.7226V38.4C294 17.92 276.08 0 255.6 0C235.12 0 217.2 17.92 217.2 38.4V43.7226C217.2 51.113 212.107 57.468 205.066 59.714C137.173 81.372 89.2 142.633 89.2 217.6V351.773C89.2 356.016 87.5143 360.086 84.5137 363.086L42.6863 404.914C39.6857 407.914 38 411.984 38 416.227V419.2C38 428.037 45.1634 435.2 54 435.2H457.2C466.037 435.2 473.2 428.037 473.2 419.2V416.227C473.2 411.984 471.514 407.914 468.514 404.914L426.686 363.086Z"/>
+						</svg>
+					</div>
+        		</div>
+        		<div class="sideicon2">
+        			<div class="sidicon-member">
+        				<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M477.373 197.611L448.523 193.485C445.231 183.39 441.14 173.58 436.331 164.203C436.331 164.203 444.182 153.744 453.855 140.845C463.54 127.947 463.233 104.452 450.996 90.0848C442.098 79.6588 432.378 69.9407 421.93 61.0524C407.551 48.8154 384.068 48.5196 371.192 58.1929L347.857 75.7172C338.48 70.9653 328.704 66.8639 318.529 63.525C318.529 63.525 316.706 50.604 314.461 34.6749C312.217 18.7345 298.408 3.07872 283.367 1.47236C274.378 0.503768 265.263 0.00195312 256.034 0.00195312C246.794 0.00195312 237.689 0.503768 228.723 1.45974C213.693 3.07732 199.872 18.7331 197.606 34.6735L193.516 63.5236C183.363 66.8625 173.599 70.9639 164.143 75.7158C164.143 75.7158 153.717 67.8774 140.842 58.1915C127.978 48.5182 104.518 48.8252 90.1389 61.051C79.6905 69.9379 69.971 79.6574 61.0841 90.0834C48.8359 104.451 48.5387 127.945 58.2134 140.844L75.7138 164.202C70.8821 173.58 66.8606 183.401 63.5455 193.484C63.5455 193.484 50.6245 195.33 34.7079 197.609C18.79 199.877 3.1006 213.663 1.49423 228.681C0.490601 237.66 0 246.776 0 255.959C0 265.222 0.490601 274.325 1.44657 283.292C3.05294 298.332 18.7536 312.165 34.6715 314.431L63.509 318.544C66.8241 328.719 70.8583 338.437 75.6774 347.894C75.6774 347.894 67.839 358.332 58.1769 371.218C48.5037 384.092 48.7994 407.564 61.0364 421.943C69.9233 432.38 79.6428 442.098 90.0912 450.987C104.47 463.212 127.942 463.497 140.805 453.801L164.106 436.277C173.564 441.074 183.339 445.153 193.479 448.492C193.479 448.492 195.314 461.413 197.569 477.342C199.825 493.26 213.646 508.983 228.686 510.578C237.653 511.524 246.768 511.991 255.997 511.991C265.237 511.991 274.341 511.524 283.331 510.567C298.371 508.983 312.181 493.26 314.425 477.342L318.493 448.492C328.679 445.153 338.443 441.074 347.821 436.277C347.821 436.277 358.269 444.115 371.155 453.801C384.03 463.497 407.524 463.224 421.905 450.998C432.353 442.1 442.072 432.38 450.959 421.943C463.196 407.564 463.505 384.092 453.819 371.218L436.295 347.894C441.102 338.437 445.193 328.706 448.487 318.544C448.487 318.544 461.408 316.698 477.337 314.431C493.266 312.163 508.955 298.331 510.562 283.292C511.508 274.325 511.997 265.21 511.997 255.959C511.997 246.763 511.507 237.672 510.551 228.681C508.981 213.687 493.302 199.877 477.373 197.611ZM256.022 369.945C193.094 369.945 142.082 318.922 142.082 256.005C142.082 193.087 193.094 142.065 256.022 142.065C318.94 142.065 369.963 193.087 369.963 256.005C369.963 318.922 318.94 369.945 256.022 369.945Z"/>
+						</svg>
+        			</div>
+        		</div>		
+        	</div>
+        	<div class="mc">
+        		<div class="mc1">
+        			<div class="meetings">
+        				<span>Meetings</span>
+        				<div class="meetings-list">
+        					<div class="meetings-item active">
+        						<div class="mi1">
+        							<div class="minum">
+        								<span>1</span>
+        							</div>
+        							<div class="mititle">
+        								<span>Introduction</span>
+        							</div>
+        						</div>
+        						<div class="mi2">
+        							<span>10:09</span>
+        						</div>
+        					</div>
+        					<div class="meetings-item">
+        						<div class="mi1">
+        							<div class="minum">
+        								<span>2</span>
+        							</div>
+        							<div class="mititle">
+        								<span>Design Thonkong</span>
+        							</div>
+        						</div>
+        						<div class="mi2">
+        							<span>08:03</span>
+        						</div>
+        					</div>
+        					<div class="meetings-item">
+        						<div class="mi1">
+        							<div class="minum">
+        								<span>3</span>
+        							</div>
+        							<div class="mititle">
+        								<span>Research</span>
+        							</div>
+        						</div>
+        						<div class="mi2">
+        							<span>11:50</span>
+        						</div>
+        					</div>
+        					<div class="meetings-item">
+        						<div class="mi1">
+        							<div class="minum">
+        								<span>4</span>
+        							</div>
+        							<div class="mititle">
+        								<span>Flow</span>
+        							</div>
+        						</div>
+        						<div class="mi2">
+        							<span>20:53</span>
+        						</div>
+        					</div>
+        					<div class="meetings-item">
+        						<div class="mi1">
+        							<div class="minum">
+        								<span>5</span>
+        							</div>
+        							<div class="mititle">
+        								<span>Let's Do IT !</span>
+        							</div>
+        						</div>
+        						<div class="mi2">
+        							<span>15:23</span>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="discuss">
+        				<span>This Cause</span>
+        				<div class="chat">
+        					<div class="chat-item">
+        						<div class="r1">
+        							<img src="./asset/aurellia.jpg" alt="">
+        							<div class="nametime">
+        								<span class="ntname">Aurellia</span>
+        								<span class="nttime">Today at 03:20 PM</span>
+        							</div>
+        						</div>
+        						<div class="r2">
+        							<span>Online Research led me to two conclusions</span>
+        						</div>
+        					</div>
+        					<div class="chat-item">
+        						<div class="r1">
+        							<img src="./asset/natasya.jpg" alt="">
+        							<div class="nametime">
+        								<span class="ntname">Natasya</span>
+        								<span class="nttime">Today at 03:20 PM</span>
+        							</div>
+        						</div>
+        						<div class="r2">
+        							<span>I prepared a survey with Google Forms</span>
+        						</div>
+        					</div>
+        					<div class="chat-item">
+        						<div class="r1">
+        							<img src="./asset/hassan.png" alt="">
+        							<div class="nametime">
+        								<span class="ntname">Hassan</span>
+        								<span class="nttime">Today at 03:20 PM</span>
+        							</div>
+        						</div>
+        						<div class="r2">
+        							<span>The purpose was to determine the basic 'pain-points'</span>
+        						</div>
+        					</div>
+        					<div class="chat-item">
+        						<div class="r1">
+        							<img src="./asset/anne.png" alt="">
+        							<div class="nametime">
+        								<span class="ntname">Anne</span>
+        								<span class="nttime">Today at 03:20 PM</span>
+        							</div>
+        						</div>
+        						<div class="r2">
+        							<span>Research is the basic key step to design user experience</span>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        		<div class="mc2">
+        			<div class="mccanvas">
+        				<div class="mcvideo">
+	        				<iframe src="https://www.youtube.com/embed/ibTs7_FscoM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+	        			</div>
+	        			<div class="mctitle">
+	        				<div class="mctitletext">
+	        					<span class="title">More familliar with UI/UX - Introduction</span>
+	        					<span class="subtitle">by Setiadi Putra Pratama <b>•</b> September 30, 2020</span>
+	        				</div>
+	        				<div class="mctitleicon">
+	        					<div class="icons">
+	        						<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		 							viewBox="0 0 477.827 477.827" style="enable-background:new 0 0 477.827 477.827;" xml:space="preserve">
+									<g>
+										<g>
+											<path d="M441.537,160.625c1.489-7.981,2.243-16.082,2.253-24.201C443.699,61.019,382.498-0.035,307.093,0.056
+												c-57.402,0.069-108.63,36.034-128.194,89.999c-35.029-13.944-74.73,3.148-88.675,38.177c-1.207,3.032-2.195,6.146-2.956,9.319
+												c-55.932,8.365-94.492,60.488-86.127,116.42c7.502,50.163,50.596,87.275,101.316,87.254h85.333
+												c9.426,0,17.067-7.641,17.067-17.067c0-9.426-7.641-17.067-17.067-17.067h-85.333c-37.703,0-68.267-30.564-68.267-68.267
+												s30.564-68.267,68.267-68.267c9.426,0,17.067-7.641,17.067-17.067c0.031-18.851,15.338-34.108,34.189-34.077
+												c8.915,0.015,17.471,3.517,23.837,9.757c6.713,6.616,17.519,6.537,24.135-0.176c2.484-2.521,4.123-5.751,4.69-9.245
+												c9.264-55.733,61.954-93.403,117.687-84.139c55.733,9.264,93.403,61.954,84.139,117.687c-0.552,3.323-1.269,6.617-2.146,9.869
+												c-1.962,7.124,0.883,14.701,7.049,18.773c31.416,20.845,39.985,63.212,19.139,94.628c-12.617,19.015-33.9,30.468-56.72,30.522
+												h-51.2c-9.426,0-17.067,7.641-17.067,17.067c0,9.426,7.641,17.067,17.067,17.067h51.2
+												c56.554-0.053,102.357-45.943,102.303-102.497C477.798,208.625,464.526,180.06,441.537,160.625z"/>
+										</g>
+									</g>
+									<g>
+										<g>
+											<path d="M353.07,363.292c-6.614-6.387-17.099-6.387-23.712,0l-56.235,56.201V170.558c0-9.426-7.641-17.067-17.067-17.067
+												c-9.426,0-17.067,7.641-17.067,17.067v248.934l-56.201-56.201c-6.78-6.548-17.584-6.36-24.132,0.419
+												c-6.388,6.614-6.388,17.099,0,23.713l85.333,85.333c6.656,6.673,17.463,6.687,24.136,0.03c0.01-0.01,0.02-0.02,0.031-0.03
+												l85.333-85.333C360.038,380.644,359.85,369.84,353.07,363.292z"/>
+										</g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									</svg>
+	        					</div>
+	        					<div class="icons">
+	        						<svg width="213" height="213" viewBox="0 0 213 213" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0)">
+									<path d="M35.9913 204.045H35.994C36.4713 204.045 37.7414 203.802 39.515 202.287L39.5241 202.279L39.5332 202.272L94.5593 155.552C94.5629 155.549 94.5665 155.546 94.5701 155.543C97.9204 152.686 102.282 151.351 106.436 151.351C110.598 151.351 114.953 152.691 118.303 155.549L118.311 155.555M35.9913 204.045L113.116 161.639L118.311 155.555M35.9913 204.045C35.5465 204.045 35.1943 203.853 34.9602 203.518C34.4894 202.842 34.022 201.738 34.022 200V18C34.022 13.0408 38.8489 8 44.84 8H167.871C173.484 8 178.022 12.6725 178.022 18V200.001C178.022 202.655 177.294 203.599 177.128 203.782C176.972 203.955 176.804 204.046 176.488 204.046C176.15 204.046 175.09 203.918 173.17 202.278L173.163 202.273L118.311 155.555M35.9913 204.045L118.311 155.555" stroke-width="16"/>
+									</g>
+									<defs>
+									<clipPath id="clip0">
+									<rect width="212.045" height="212.045" fill="white"/>
+									</clipPath>
+									</defs>
+									</svg>
+	        					</div>
+	        				</div>
+	        			</div>
+	        			<div class="descassignment">
+	        				<span>Description</span>
+	        				<span class="active">Assignment</span>
+	        			</div>
+	        			<div class="assignment-list">
+	        				<div class="assignment-item">
+	        					<div class="item-title">
+	        						<span>1. Create Splash Screen</span>
+	        					</div>
+	        					<div class="item-subtitle">
+	        						<span>Keep it simple with a short, elegant animation to present your app. Always remember the 3-seccond rule</span>
+	        					</div>
+	        					<div class="item-footer">
+	        						<div class="f1">
+	        							<div class="btn">
+	        								<span>View Detail</span>
+	        							</div>
+	        							<div class="limit">
+	        								<span>1 day left</span>
+	        							</div>
+	        						</div>
+	        						<div class="f2">
+	        							<span>15 Students Collected</span>
+	        						</div>
+	        					</div>
+	        				</div>
+	        				<div class="assignment-item">
+	        					<div class="item-title">
+	        						<span>2. Create Sign In & Sign Up Page</span>
+	        					</div>
+	        					<div class="item-subtitle">
+	        						<span>Sign up is the last thing users want to do. Generally, users are not willing to sign up until they see value in doing so.</span>
+	        					</div>
+	        					<div class="item-footer">
+	        						<div class="f1">
+	        							<div class="btn">
+	        								<span>View Detail</span>
+	        							</div>
+	        							<div class="limit">
+	        								<span>2 day left</span>
+	        							</div>
+	        						</div>
+	        						<div class="f2">
+	        							<span>8 Students Collected</span>
+	        						</div>
+	        					</div>
+	        				</div>
+	        			</div>
+        			</div>	
+        		</div>
+        		<div class="mc3">
+        			<div class="course">
+        				<span>My Courses</span>
+        				<div class="search">
+	        				<input type="text" placeholder="Search">
+	        				<svg height="32px" version="1.1" viewBox="0 0 32 32" width="32px" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink"><title/><desc/><defs/><g fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1"><g id="icon-111-search"><path d="M19.4271164,20.4271164 C18.0372495,21.4174803 16.3366522,22 14.5,22 C9.80557939,22 6,18.1944206 6,13.5 C6,8.80557939 9.80557939,5 14.5,5 C19.1944206,5 23,8.80557939 23,13.5 C23,15.8472103 22.0486052,17.9722103 20.5104077,19.5104077 L26.5077736,25.5077736 C26.782828,25.782828 26.7761424,26.2238576 26.5,26.5 C26.2219324,26.7780676 25.7796227,26.7796227 25.5077736,26.5077736 L19.4271164,20.4271164 L19.4271164,20.4271164 Z M14.5,21 C18.6421358,21 22,17.6421358 22,13.5 C22,9.35786417 18.6421358,6 14.5,6 C10.3578642,6 7,9.35786417 7,13.5 C7,17.6421358 10.3578642,21 14.5,21 L14.5,21 Z" id="search"/></g></g></svg>
+	        			</div>
+	        			<div class="course-list">
+	        				<div class="course-item">
+	        					<div class="course-img">
+	        						<img src="./asset/setiadi.jpg" alt="">
+	        					</div>
+	        					<div class="course-detail">
+	        						<div class="cd-title"><span>Digital Marketing</span></div>
+	        						<div class="cd-author"><span>by Setiadi</span></div>
+	        						<div class="progress">
+	        							<div class="base-red"></div>
+	        							<div class="actual-red"></div>
+	        						</div>
+	        					</div>
+	        				</div>
+	        				<div class="course-item">
+	        					<div class="course-img">
+	        						<img src="./asset/tree.png" alt="">
+	        					</div>
+	        					<div class="course-detail">
+	        						<div class="cd-title"><span>Visual Art</span></div>
+	        						<div class="cd-author"><span>by Abraham</span></div>
+	        						<div class="progress">
+	        							<div class="base-blue"></div>
+	        							<div class="actual-blue"></div>
+	        						</div>
+	        					</div>
+	        				</div>
+	        				<div class="course-item">
+	        					<div class="course-img">
+	        						<img src="./asset/usb.png" alt="">
+	        					</div>
+	        					<div class="course-detail">
+	        						<div class="cd-title"><span>Capitalist Thinking</span></div>
+	        						<div class="cd-author"><span>by Lisa</span></div>
+	        						<div class="progress">
+	        							<div class="base-green"></div>
+	        							<div class="actual-green"></div>
+	        						</div>
+	        					</div>
+	        				</div>
+	        			</div>
+        			</div>
+        			<div class="webinar">
+        				<span>Upcoming Webinar</span>
+        				<div class="webinar-list">
+        					<div class="webinar-item">
+        						<img src="./asset/webinar.png" alt="">
+        						<div class="webinar-title">
+        							<span>Web Development</span>
+        						</div>
+        						<div class="webinar-date">
+        							<span>September 30, 2020</span>
+        						</div>
+        					</div>
+        				</div>
+        				<div class="viewall">
+        					<span>View All</span>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </div>		
+    </body>
+</html>

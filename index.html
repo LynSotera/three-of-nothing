@@ -1,0 +1,33 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="A non-profit Project to convert some UI that found on Internet into a code (it can be responsive or not, usually not responsive)">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    	<div class="canvas">
+    		<div class="soon">
+    			<span>On Progress...</span>
+    		</div>
+    		<div class="anime">
+    			
+    		</div>
+    	</div>
+
+    	<script src="anime.min.js"></script>
+    	<script>
+			anime({
+			  targets: '.anime',
+			  translateX: 1200,
+			  loop: true,
+			  easing: 'steps(10)'
+			})
+    	</script>
+    </body>
+</html>
