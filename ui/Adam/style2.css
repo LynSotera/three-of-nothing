@@ -12,20 +12,7 @@ body{
 }
 
 .canvas{
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-}
-
-.author{
-	display: flex;
-	flex-direction: column;
-	align-self: center;
-	align-content: center;
-}
-
-.author .from{
-	font-family: "Nunito";
-	font-size: 3vw;
+	
 }
 
 .container{
