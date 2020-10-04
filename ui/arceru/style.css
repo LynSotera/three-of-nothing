@@ -172,14 +172,7 @@ body{
 	width: 1.5rem;
 	height: auto;
 	fill: white;
-	margin-right: 1rem;
-
-	cursor: pointer;
-}
-
-.icon img{
-	width: 1.5rem;
-	height: auto;
+	margin-left: 1rem;
 
 	cursor: pointer;
 }
