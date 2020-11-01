@@ -1,0 +1,193 @@
+/* CSS Rules : font-family: 'Nunito Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.jumbotron{
+    background-image: url('./asset/img/lovely_summer_by_gydw1n_dd1fymd-pre.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    padding: 2rem 1rem 2rem 1rem;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin: 0;
+    padding: 0 4rem 0 4rem;
+}
+
+.navbar > img{
+    width: auto;
+    height: 2rem;
+
+    opacity: 0.7;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0;
+}
+
+.menu > span{
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+    font-size: 1.3vw;
+
+    vertical-align: middle;
+
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s;
+
+}
+
+.menu > span:hover{
+    border-bottom: 3px solid white;
+    cursor: pointer;
+}
+
+.menu > img{
+    margin-left: 1rem;
+
+    width: 3rem;
+    height: auto;
+
+    border-radius: 999px;
+
+    cursor: pointer;
+}
+
+.j-content{
+    margin-top: 7rem;
+    margin-left: 3rem;
+
+    display: grid;
+    grid-template-columns: 33% 67%;
+
+    padding: 0 4rem 0 4rem;
+}
+
+.introduction > span.title{
+    font-size: 3.5vw;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    display: block;
+}
+
+.introduction > span.subtitle{
+    font-size: 1.5vw;
+    color: white;
+}
+
+.introduction > button{
+    font-size: 1.2vw;
+    display: block;
+    text-transform: capitalize;
+    color: black;
+    font-weight: bold;
+
+    background-color: yellow;
+
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    margin-top: 1.5rem;
+
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s ease;
+}
+
+.introduction > button:hover{
+    background-color: #d9d200;
+}
+
+.gallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery > svg{
+    width: 1.5rem;
+    height: auto;
+    fill: white;
+
+    transition: filter 0.2s ease;
+}
+
+.gallery > svg.prev{
+    transform: rotate(180deg);
+}
+
+.gallery > svg:hover{
+    filter: brightness(0.8);
+    cursor: pointer;
+}
+
+.gallery-item{
+    width: 14rem;
+    height: calc(14rem / 3 * 4);
+    background-color: white;
+
+    transition: transform 0.2s ease-in-out;
+}
+
+.gallery-item > img{
+    object-fit: cover;
+    
+    height: calc(14rem / 3 * 4);
+    width: 14rem;
+}
+
+.gallery-item:hover{
+    transform: translate(0, -30px);
+}
+
+.social-media > svg{
+    margin: 0;
+    padding: 0;
+    width: 2rem;
+    fill: white;
+    filter: brightness(0.8);
+    display: block;
+
+    margin-bottom: 2rem;
+}
+
+.social-media > svg.twitter:hover{
+    fill: #03a9f4;
+}
+
+.social-media > svg.facebook:hover{
+    fill: #03a9f4;
+}
+
+.social-media > svg.instagram:hover{
+    fill: url(#MyGradient)
+}
